@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>111976728135-52vhkou1nq0a8j7c2reg5qmd7huug4qj.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.111976728135-52vhkou1nq0a8j7c2reg5qmd7huug4qj</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCe6yzUrZw6PF2BHDhGcenJphp2597onRk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>111976728135</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>io.github.ishangupta3.fade</string>
+	<key>PROJECT_ID</key>
+	<string>shining-inferno-7743</string>
+	<key>STORAGE_BUCKET</key>
+	<string>shining-inferno-7743.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:111976728135:ios:091a0745b7d392f2</string>
+	<key>DATABASE_URL</key>
+	<string>https://shining-inferno-7743.firebaseio.com</string>
+</dict>
+</plist>
