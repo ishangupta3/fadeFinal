@@ -11,7 +11,7 @@ import Firebase
 
 class ViewController: UIViewController {
     
-    var signUpState = false
+    var signUpState = true
 
     @IBOutlet weak var username: UITextField!
     
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.passwordSecond.hidden = true
-        signUpState = false
+        
        
         
         
