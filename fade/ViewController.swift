@@ -32,12 +32,17 @@ class ViewController: UIViewController {
             return false
         }
     }
+    
+    
+  
+
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.passwordSecond.hidden = true
         signUpState = false
+       
         
         
         // Do any additional setup after loading the view, typically from a nib.
