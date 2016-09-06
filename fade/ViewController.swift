@@ -47,11 +47,17 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInDeleg
   */
     
     
-    let loginButton: FBSDKLoginButton = FBSDKLoginButton()
     
-
+    
+    
+  
     // Google Sign In Button
     @IBOutlet weak var googleButton: GIDSignInButton!
+    
+    
+    
+    
+    
    
    
 
@@ -61,6 +67,13 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInDeleg
         
      //   googleButton.colorScheme.
         
+        
+        self.loginButton.readPermissions = ["public_profile", "email", "user_friends"]
+        self.loginButton.delegate = self
+        self.loginButton.backgroundColor = UIColor.darkGrayColor()
+        self.loginButton.frame = CGRectMake(50, 550, 300, 35)
+        self.view!.addSubview(self.loginButton)
+        self.loginButton.setTitle("My Login Button", forState: .Normal)
         
         
         GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()?.options.clientID
@@ -82,7 +95,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInDeleg
                 // No user is signed in.
                 // show the user the login screen
                 
-                
+                //ishan
                 
                 
              
@@ -99,6 +112,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInDeleg
         self.view!.addSubview(self.loginButton)
         self.loginButton.setTitle("My Login Button", forState: .Normal)
         
+        // end of view did load
         
     }
         /*
@@ -116,33 +130,40 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInDeleg
     
     
     
-    
-    
+    // Facebok button instance
+    let loginButton: FBSDKLoginButton = FBSDKLoginButton()
+   
     // function when login button is pressed (FACEBOOK)
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
         
-        print("User Logged In")
+        
         
         if (error != nil) {
             self.loginButton.hidden = false
             
-        } else if (result.isCancelled) {
+        } else  if(result.isCancelled) {
             
             self.loginButton.hidden = false
+            
         } else {
+            
             
             let credential = FIRFacebookAuthProvider.credentialWithAccessToken(FBSDKAccessToken.currentAccessToken().tokenString)
             
             FIRAuth.auth()?.signInWithCredential(credential) { (user, error) in
-    
+                
                 print("User Logged into Firebase")
-    
+                
             }
             
         }
-    
+        
+        
+        
     }
-    
+
+
+
     // function when logout button is pressed (FACEBOOK)
     func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
         print ("User did Log out")
@@ -151,7 +172,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInDeleg
     
     
 
-    // GOOGLE sign in code _______________________________________
+    // GOOGLE sign in code ______________________________________________
     
       
     

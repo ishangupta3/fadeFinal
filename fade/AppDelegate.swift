@@ -11,6 +11,7 @@ import CoreData
 import Firebase
 import FBSDKLoginKit
 import GoogleSignIn
+import GoogleMaps
 
 
 @UIApplicationMain
@@ -24,10 +25,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FIRApp.configure()
         
+        GMSServices.provideAPIKey("AIzaSyCxVfDa0usqx5Fv4GrsORRFySL03h3RlvQ")
+        
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
 
         
-        
+        UINavigationBar.appearance().barTintColor = UIColor(red:0.92, green:0.92, blue:0.92, alpha:1.0)
         
         return true
     }
