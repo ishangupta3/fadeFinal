@@ -30,8 +30,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
 
         
-        UINavigationBar.appearance().barTintColor = UIColor(red:0.92, green:0.92, blue:0.92, alpha:1.0)
+       UINavigationBar.appearance().barTintColor = UIColor(red:0.92, green:0.92, blue:0.92, alpha:1.0)
         
+        
+      //  UINavigationBar.appearance().barTintColor = UIColor(red:0.00, green:0.00, blue:0.00, alpha:1.0)
         return true
     }
     

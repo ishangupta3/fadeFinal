@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		6BFDCA500A3DB82EA609CD33 /* libPods-fade.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F5133F9D5AAC266C77A080 /* libPods-fade.a */; };
+		E46EDB8B1D81683F0079B71E /* Promo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46EDB8A1D81683F0079B71E /* Promo.swift */; };
 		E49894741D51C73900839370 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E49894731D51C73900839370 /* SWRevealViewController.m */; };
 		E49894771D51CD0200839370 /* OurViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49894761D51CD0200839370 /* OurViewController.swift */; };
 		E498947D1D51DB4A00839370 /* Menu2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E498947C1D51DB4A00839370 /* Menu2.swift */; };
 		E498947F1D51ECD600839370 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E498947E1D51ECD600839370 /* NavigationViewController.swift */; };
+		E49BFBB81DA83E2600A5F060 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49BFBB71DA83E2600A5F060 /* ShopViewController.swift */; };
+		E49BFBBA1DA844FE00A5F060 /* CustomCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49BFBB91DA844FE00A5F060 /* CustomCellTableViewCell.swift */; };
 		E4A1107C1D19F08D00993989 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A1107B1D19F08D00993989 /* AppDelegate.swift */; };
 		E4A1107E1D19F08D00993989 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A1107D1D19F08D00993989 /* ViewController.swift */; };
 		E4A110811D19F08D00993989 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4A1107F1D19F08D00993989 /* Main.storyboard */; };
@@ -28,11 +31,14 @@
 		4910171704D39628F1E772DE /* Pods-fade.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fade.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fade/Pods-fade.debug.xcconfig"; sourceTree = "<group>"; };
 		6D7472D873949F6A81AB109C /* Pods-fade.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fade.release.xcconfig"; path = "Pods/Target Support Files/Pods-fade/Pods-fade.release.xcconfig"; sourceTree = "<group>"; };
 		E4177B1C1D2C60F500E644C3 /* fade-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fade-Bridging-Header.h"; sourceTree = "<group>"; };
+		E46EDB8A1D81683F0079B71E /* Promo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Promo.swift; sourceTree = "<group>"; };
 		E49894721D51C73900839370 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		E49894731D51C73900839370 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		E49894761D51CD0200839370 /* OurViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OurViewController.swift; sourceTree = "<group>"; };
 		E498947C1D51DB4A00839370 /* Menu2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu2.swift; sourceTree = "<group>"; };
 		E498947E1D51ECD600839370 /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		E49BFBB71DA83E2600A5F060 /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		E49BFBB91DA844FE00A5F060 /* CustomCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCellTableViewCell.swift; sourceTree = "<group>"; };
 		E4A110781D19F08D00993989 /* fade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fade.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4A1107B1D19F08D00993989 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4A1107D1D19F08D00993989 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -114,9 +120,12 @@
 			children = (
 				E498946B1D51C54E00839370 /* SWRevealViewController */,
 				E4A1107B1D19F08D00993989 /* AppDelegate.swift */,
+				E46EDB8A1D81683F0079B71E /* Promo.swift */,
 				E498947C1D51DB4A00839370 /* Menu2.swift */,
 				E4A1107D1D19F08D00993989 /* ViewController.swift */,
 				E4A1107F1D19F08D00993989 /* Main.storyboard */,
+				E49BFBB91DA844FE00A5F060 /* CustomCellTableViewCell.swift */,
+				E49BFBB71DA83E2600A5F060 /* ShopViewController.swift */,
 				E498947E1D51ECD600839370 /* NavigationViewController.swift */,
 				E49894761D51CD0200839370 /* OurViewController.swift */,
 				E4A110821D19F08D00993989 /* Assets.xcassets */,
@@ -252,8 +261,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E498947F1D51ECD600839370 /* NavigationViewController.swift in Sources */,
+				E46EDB8B1D81683F0079B71E /* Promo.swift in Sources */,
 				E4A1107E1D19F08D00993989 /* ViewController.swift in Sources */,
 				E4A1107C1D19F08D00993989 /* AppDelegate.swift in Sources */,
+				E49BFBB81DA83E2600A5F060 /* ShopViewController.swift in Sources */,
+				E49BFBBA1DA844FE00A5F060 /* CustomCellTableViewCell.swift in Sources */,
 				E49894741D51C73900839370 /* SWRevealViewController.m in Sources */,
 				E49894771D51CD0200839370 /* OurViewController.swift in Sources */,
 				E498947D1D51DB4A00839370 /* Menu2.swift in Sources */,

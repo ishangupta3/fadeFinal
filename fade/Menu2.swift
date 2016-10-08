@@ -9,8 +9,35 @@
 import UIKit
 
 class Menu2: UITableViewController {
-
+    
+    
+    
+    
     @IBOutlet weak var menuButton: UIBarButtonItem!
+    
+    
+    
+    
+    
+//    
+//    var shopList = ["Fade Cuts", "Rasputin Barbers", "Good Boy Cuts", "Gorilla Cuts"]
+//    
+//    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return shopList.count
+//        
+//    }
+//    
+//    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath:
+//        NSIndexPath) -> UITableViewCell {
+//        let cellIdentifier = "Cell"
+//        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier,
+//                                                               forIndexPath: indexPath)
+//        // Configure the cell...
+//        cell.textLabel?.text = shopList[indexPath.row]
+//        return cell }
+//    
+    
+    
     
     
     override func viewDidLoad() {
