@@ -38,16 +38,16 @@ class NavigationViewController: UIViewController, CLLocationManagerDelegate{
         
         
         // Independent from a marker
-       let camera = GMSCameraPosition.cameraWithLatitude(37.733237, longitude: -122.503009, zoom: 12)
+       let camera = GMSCameraPosition.cameraWithLatitude(37.3351874, longitude: -121.88107150000002, zoom: 12)
        mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
        view = mapView
   
         
-        let currentLocation = CLLocationCoordinate2DMake(37.733237, -122.503009)
+        let currentLocation = CLLocationCoordinate2DMake(37.3351874, -121.88107150000002)
         let marker = GMSMarker(position: currentLocation)
         marker.icon = GMSMarker.markerImageWithColor(UIColor.blackColor())
         marker.title = "Fade Cuts"
-         marker.snippet = "Fresh cuts"
+         marker.snippet = "116 users around you"
         marker.map = mapView
         
         
@@ -55,7 +55,7 @@ class NavigationViewController: UIViewController, CLLocationManagerDelegate{
         let  sanjoseMarker = CLLocationCoordinate2DMake(37.3351874, -121.88107150000002)
         let marker2 = GMSMarker(position: sanjoseMarker)
         marker.icon = GMSMarker.markerImageWithColor(UIColor.blackColor())
-        marker.title = "Rasputin Cuts"
+        marker.title = "Your Location"
         marker.map = mapView
         
         
